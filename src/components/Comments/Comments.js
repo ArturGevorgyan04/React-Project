@@ -8,9 +8,8 @@ import uniqid from 'uniqid' // yurahatuk id e talis
 // ayn mez talis e yurahatuk id ner
 
 
-function Comments(props) {
+function Comments() {
     const [textComment, setTextComment] = useState('');
-    console.log('comment props >', props);
     const comments = useSelector(state => {
         console.log('redux state >', state);
         const { comments } = state;
@@ -27,6 +26,7 @@ function Comments(props) {
 
     const handleSubmit = (e) => { // submiti jamanak menq form-i menq atmena enq tali ira default vijaky 
         e.preventDefault();
+        const id = uniqid()
         dispatch(commentCreate(textComment, id))
         setTextComment(e.target.value = '')
     }

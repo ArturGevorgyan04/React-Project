@@ -3,7 +3,7 @@ import React from 'react'
 import Likes from '../../components/Likes/Likes'
 import Title from '../../components/Title/Title'
 import galactic from './galactic.jpg'
-// import Comments from '../../components/Comments/Comments'
+import Comments from '../../components/Comments/Comments'
 
 export default function AboutPage() {
     return (
@@ -15,7 +15,7 @@ export default function AboutPage() {
               <Title/>
               <Likes/>
             </div>
-            {/* <Comments/> */}
+            <Comments/>
           </div>
         </div>
       </div>

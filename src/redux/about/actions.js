@@ -1,7 +1,9 @@
 import {
     INCREMENT,
     DECREMENT,
-    INPUT_TEXT  
+    INPUT_TEXT,
+    COMENT_CREATE,
+    COMENT_DELETE  
 } from './types'
 
 export function incrementLikes() {
@@ -20,5 +22,17 @@ export function inputText(text) {
     return {
         type: INPUT_TEXT,
         text,
+    }
+}
+export function commentCreate(text, id) {
+    return {
+        type: COMENT_CREATE,
+        data: { text, id },
+    }
+}
+export function commentDelete(id) {
+    return {
+        type: COMENT_DELETE,
+        id,
     }
 }
