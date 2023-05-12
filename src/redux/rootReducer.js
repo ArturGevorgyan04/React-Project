@@ -9,7 +9,9 @@ import { likesReducer } from './about/reducer'
 
 const rootReducer = combineReducers({// aystex menq grelu enq mer bolor Reducer nery
       likes:likesReducer,
-      text: likesReducer
+      text: likesReducer,
+      comments: likesReducer,
+      
 })
 
 export default rootReducer

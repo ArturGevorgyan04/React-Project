@@ -5,7 +5,6 @@ import { commentDelete } from '../../redux/about/actions'
 import { useDispatch } from "react-redux";
 
 function SingleComments({data}) { // amen commenti hamar stanum enq texty ev idn
-    console.log('single comment props >', props);
     const [commentText, setCommentText] = useState('');
     const {text,id} = data;
     const dispatch = useDispatch();

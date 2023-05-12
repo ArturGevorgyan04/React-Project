@@ -1,8 +1,8 @@
-.comments-item {
+.comment-item {
     display: flex;
     align-items: center;
 }
-.comments-item-delete {
+.comment-item-deleta {
     cursor: pointer;
     width: 10px;
     color: red;
